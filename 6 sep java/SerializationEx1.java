@@ -18,11 +18,11 @@ public class SerializationEx1 {
     public static void main(String[] args) throws IOException {
         Student s1 = new Student(111, "AAA");
         try (ObjectOutputStream os = new ObjectOutputStream(
-                new FileOutputStream("/Users/lakshyaduhoon/Documents/java/6 sep java/SerialStud.txt"));) {
+                new FileOutputStream("/Users/lakshyaduhoon/Documents/java/6 sep java/SerialStud.ser"));) {
             os.writeObject(s1);
         }
         try (ObjectInputStream os = new ObjectInputStream(
-                new FileInputStream("/Users/lakshyaduhoon/Documents/java/6 sep java/SerialStud.txt"));) {
+                new FileInputStream("/Users/lakshyaduhoon/Documents/java/6 sep java/SerialStud.ser"));) {
             Student s = (Student) os.readObject();
             System.out.println(s);
         } catch (IOException e) {

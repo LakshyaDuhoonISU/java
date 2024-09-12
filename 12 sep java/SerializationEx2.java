@@ -15,7 +15,7 @@ class Dog implements Serializable {
 }
 public class SerializationEx2 {
     public static void main(String[] args) throws IOException {
-        Dog s1 = new Dog("German", "Tommy");
+        Dog s1 = new Dog("Rottweiler", "ABC");
         try (ObjectOutputStream os = new ObjectOutputStream(
                 new FileOutputStream("/Users/lakshyaduhoon/Documents/java/12 sep java/Dog.ser"));) {
             os.writeObject(s1);

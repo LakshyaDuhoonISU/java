@@ -13,6 +13,7 @@ class Dog implements Serializable {
         return "breed = " + this.breed + ", name = " + this.name;
     }
 }
+
 public class SerializationEx2 {
     public static void main(String[] args) throws IOException {
         Dog s1 = new Dog("Rottweiler", "ABC");

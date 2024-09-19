@@ -12,6 +12,7 @@ public class Ex2SimpleCalculator {
         JLabel l1 = new JLabel("Enter first number: ");
         JTextField tf2 = new JTextField(10);
         JLabel l2 = new JLabel("Enter second number: ");
+        JLabel l3 = new JLabel("Result: ");
         JTextField tf3 = new JTextField(10);
 
         b.addActionListener(
@@ -46,10 +47,11 @@ public class Ex2SimpleCalculator {
         f.add(tf1);
         f.add(l2);
         f.add(tf2);
+        f.add(b2);
+        f.add(l3);
         f.add(tf3);
         f.add(b);
         f.add(b1);
-        f.add(b2);
         f.setSize(400, 500);
         f.setLayout(new FlowLayout());
         f.setVisible(true);

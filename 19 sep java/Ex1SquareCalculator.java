@@ -12,7 +12,7 @@ public class Ex1SquareCalculator {
         l.setBounds(50, 50, 150, 20);
         tf.setBounds(150, 50, 150, 20);
         b.setBounds(50, 100, 150, 30);
-        b1.setBounds(200, 100,95,30);
+        b1.setBounds(200, 100, 95, 30);
 
         b.addActionListener(
                 new ActionListener() {

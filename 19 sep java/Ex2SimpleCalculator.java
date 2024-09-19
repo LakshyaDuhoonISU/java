@@ -43,6 +43,7 @@ public class Ex2SimpleCalculator {
                         tf3.setText("");
                     }
                 });
+                
         f.add(l1);
         f.add(tf1);
         f.add(l2);
